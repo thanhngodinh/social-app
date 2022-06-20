@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './PostSide.module.scss';
-import classNames from 'classnames/bind';
 import Posts from '../Posts/Posts';
 import PostShare from '../PostShare/PostShare';
+import styles from './PostSide.module.scss';
+import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 

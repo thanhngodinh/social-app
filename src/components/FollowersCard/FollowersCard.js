@@ -12,19 +12,21 @@ const FollowersCard = () => {
 
             {Followers.map((follower, id) => {
                 return (
-                    <div className={cx("follower")}>
-                        <div>
+                    <div className={cx('follower')}>
+                        <div className={cx('follower-wrapper')}>
                             <img
                                 src={follower.img}
                                 alt=""
-                                className={cx("follower-image")}
+                                className={cx('follower-image')}
                             />
-                            <div className={cx("name")}>
+                            <div className={cx('name')}>
                                 <span>{follower.name}</span>
                                 <span>@{follower.username}</span>
                             </div>
                         </div>
-                        <button className={cx("button", "fc-button")}>Follow</button>
+                        <button className={cx('button', 'fc-button')}>
+                            Follow
+                        </button>
                     </div>
                 );
             })}
